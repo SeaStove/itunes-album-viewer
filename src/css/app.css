@@ -1,0 +1,85 @@
+:root {
+  --primary: #e4e3e3;
+  --secondary: #84a9ac;
+  --accent: #3b6978;
+  --accent-alt: #204051;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.theme {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.theme .ant-layout-header {
+  background-color: var(--primary);
+  font-size: 24pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  height: 128px;
+  border-bottom: 1px solid var(--accent-alt);
+}
+
+.theme .logo {
+  color: var(--accent-alt);
+}
+
+.theme .ant-layout-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--secondary);
+  margin-top: 128px;
+  overflow-y: scroll;
+}
+
+.theme .search {
+  max-width: 700px;
+  height: 40px;
+  background-color: var(--accent-alt);
+  border-color: var(--accent-alt);
+  margin: 1rem;
+  color: var(--primary);
+}
+
+.albums {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(5, 220px);
+}
+
+.theme .ant-card {
+  margin: 1rem;
+  background-color: var(--accent);
+  border-color: var(--accent);
+  text-align: center;
+  color: white;
+  width: 200px;
+  height: 90%;
+}
+
+.cover {
+  width: 200px;
+  height: 200px;
+}
+
+.theme .ant-card-meta-title {
+  color: var(--primary);
+}
+
+.theme .ant-card-meta-description {
+  color: var(--accent-alt);
+}

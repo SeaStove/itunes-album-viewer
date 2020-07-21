@@ -1,0 +1,36 @@
+{
+  "name": "itunes-album-viewer",
+  "version": "1.0.0",
+  "description": "Front-end for viewing the itunes album api",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertastic/itunes-album-viewer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^4.4.3",
+    "axios": "^0.19.2",
+    "moment": "^2.27.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
