@@ -1,6 +1,6 @@
 import React from "react";
 import { Albums, Search } from "./components";
-import { Layout } from "antd";
+import { Layout, BackTop } from "antd";
 
 export default function App() {
   return (
@@ -10,7 +10,14 @@ export default function App() {
         <Search />
       </Layout.Header>
       <Layout.Content>
-        <Albums />
+        <div className="albums">
+          <Albums />
+        </div>
+        <BackTop
+          target={() =>
+            document.getElementsByClassName("ant-layout-content")[0]
+          }
+        />
       </Layout.Content>
     </Layout>
   );

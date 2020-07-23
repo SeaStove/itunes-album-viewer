@@ -90,3 +90,26 @@ body {
 .theme .ant-empty-description {
   color: var(--accent-text);
 }
+
+.theme .ant-typography {
+  color: var(--accent-text);
+}
+
+.theme .anticon-apple {
+  color: var(--accent-text);
+  font-size: 128pt;
+  margin-bottom: 1rem;
+}
+
+.theme .apple-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme .ant-spin-dot-item {
+  background-color: var(--accent);
+}
+
+.theme .ant-back-top-icon {
+  padding-top: 10px;
+}
