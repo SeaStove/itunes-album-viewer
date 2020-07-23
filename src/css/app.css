@@ -1,8 +1,8 @@
 :root {
-  --primary: #e4e3e3;
-  --secondary: #84a9ac;
-  --accent: #3b6978;
-  --accent-alt: #204051;
+  --primary: #141414;
+  --secondary: #1d1d1d;
+  --accent: #ea907a;
+  --accent-text: #dcdcdc;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 .theme .ant-layout-header {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   font-size: 24pt;
   display: flex;
   flex-direction: column;
@@ -29,11 +29,11 @@ body {
   width: 100%;
   top: 0;
   height: 128px;
-  border-bottom: 1px solid var(--accent-alt);
+  border-bottom: 1px solid var(--accent);
 }
 
 .theme .logo {
-  color: var(--accent-alt);
+  color: var(--accent-text);
 }
 
 .theme .ant-layout-content {
@@ -49,37 +49,44 @@ body {
 .theme .search {
   max-width: 700px;
   height: 40px;
-  background-color: var(--accent-alt);
-  border-color: var(--accent-alt);
+  background-color: var(--accent);
+  border-color: var(--accent);
   margin: 1rem;
   color: var(--primary);
+}
+
+.theme ::placeholder {
+  color: var(--secondary);
 }
 
 .albums {
   max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(5, 220px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .theme .ant-card {
-  margin: 1rem;
-  background-color: var(--accent);
-  border-color: var(--accent);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
   text-align: center;
   color: white;
-  width: 200px;
-  height: 90%;
+  width: 300px;
 }
 
 .cover {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 
 .theme .ant-card-meta-title {
-  color: var(--primary);
+  color: var(--accent-text);
 }
 
 .theme .ant-card-meta-description {
-  color: var(--accent-alt);
+  color: var(--accent-text);
+}
+
+.theme .ant-empty-description {
+  color: var(--accent-text);
 }
