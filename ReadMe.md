@@ -1,6 +1,6 @@
 # Itunes Album Viewer
 
-Demo: http://itunes-react-app.herokuapp.com/
+https://itunes-react-app.herokuapp.com/
 
 The api was originally called on each keystroke, though there is a 20ish call limit per minute. The calls are cancellable using the axios cancel token functionality, though found even that would lead to many 403s. Changed to requiring pressing the Enter button to search.
 
