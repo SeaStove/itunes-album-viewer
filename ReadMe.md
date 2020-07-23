@@ -10,6 +10,6 @@ To run:
 3. npm install
 4. npm run start:dev
 
-Libraries used: Ant Design, React, axios, moment
+Libraries used: Ant Design, OverlayScrollBars, React, axios, moment
 
 
